@@ -1,0 +1,16 @@
+body {
+  background-color: rgba(135, 207, 235, 0.103);
+}
+.hotelHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  flex-direction: column;
+}
+.hotelHeading h1 {
+  font-weight: 700;
+}
+.hotelHeading p {
+  font-size: 20px;
+}

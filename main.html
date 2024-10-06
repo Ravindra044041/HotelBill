@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Hotel Bill</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="App.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hotelHeading">
+        <h1>Hotel Madhuban</h1>
+        <h5>Redma Chock, Daltonganj, Palamu</h5>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3 mb-3 me-3 pt-2 pb-2 border">
+          <h5 class="text-danger fs-3 fw-bold">
+            Customer Personal Information
+          </h5>
+          <div class="input-group mt-3">
+            <span class="input-group-text bg-info fs-5">Full Name</span>
+            <input
+              type="text"
+              aria-label="Full Name"
+              class="form-control fs-5"
+              id="custName"
+            />
+          </div>
+          <div class="input-group mt-3">
+            <span class="input-group-text bg-info fs-5">Email</span>
+            <input
+              type="email"
+              aria-label="email"
+              class="form-control fs-5"
+              id="custEmail"
+            />
+          </div>
+          <div class="input-group mt-3">
+            <span class="input-group-text bg-info fs-5">Mobile No.</span>
+            <input
+              type="text"
+              aria-label="Moible No"
+              class="form-control fs-5"
+              id="custPhone"
+            />
+          </div>
+          <div class="input-group mt-3">
+            <span class="input-group-text bg-info fs-5">Address</span>
+            <input
+              type="text"
+              aria-label="Address"
+              class="form-control fs-5"
+              id="custAdd"
+            />
+          </div>
+        </div>
+        <!-- Orders section -->
+        <div class="col-md-12 mt-3 mb-3 pt-2 pb-2 border">
+          <h5 class="text-danger fs-3 fw-bold">Your Orders</h5>
+          <div class="input-group mt-3">
+            <span class="input-group-text bg-info fs-5">Samosa (Rs. 10)</span>
+            <input
+              type="text"
+              aria-label="Address"
+              class="form-control fs-5"
+              id="samosa"
+            />
+          </div>
+          <div class="input-group mt-3">
+            <span class="input-group-text bg-info fs-5">Burger (Rs. 20)</span>
+            <input
+              type="text"
+              aria-label="Address"
+              class="form-control fs-5"
+              id="burger"
+            />
+          </div>
+          <div class="input-group mt-3">
+            <span class="input-group-text bg-info fs-5"
+              >Half Chaumin (Rs. 20)</span
+            >
+            <input
+              type="text"
+              aria-label="Address"
+              class="form-control fs-5"
+              id="halfChaumin"
+            />
+          </div>
+          <div class="input-group mt-3">
+            <span class="input-group-text bg-info fs-5">Chaumin (Rs. 40)</span>
+            <input
+              type="text"
+              aria-label="Address"
+              class="form-control fs-5"
+              id="chaumin"
+            />
+          </div>
+        </div>
+
+        <div
+          class="col-md-12 mt-3 mb-3 ps-5 pe-5 pt-2 pb-2 border"
+          style="background-color: rgba(255, 255, 0, 0.411)"
+        >
+          <h5 class="text-danger fw-bold fs-3">Your Bill</h5>
+          <p class="fs-4">Name : <span id="billName"></span></p>
+          <p class="fs-4">Email : <span id="billEmail"></span></p>
+          <p class="fs-4">Mobile : <span id="billPhone"></span></p>
+          <p class="fs-4">Address : <span id="billAdd"></span></p>
+          <table class="table">
+            <thead class="fs-4">
+              <tr>
+                <th scope="col">S. No.</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Rate</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody id="billDisplay" class="fs-4"></tbody>
+          </table>
+        </div>
+      </div>
+      <h5 class="text-danger fs-4 fw-bold">
+        Total Amount : Rs. <span id="totalAmount"></span>
+      </h5>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js link -->
+    <script src="App.js"></script>
+  </body>
+</html>
